@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SPA in Electron with Bootstrap Tabs</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="import" href="pages/home.html">
+    <link rel="import" href="pages/about.html">
+    <link rel="import" href="pages/contact.html">
+    <link rel="import" href="pages/settings.html">
+</head>
+
+<body>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-2">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="home-tab" data-toggle="pill" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    <a class="nav-link" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
+                    <a class="nav-link" id="contact-tab" data-toggle="pill" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                    <a class="nav-link" id="settings-tab" data-toggle="pill" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+                    <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab"></div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
+                    <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const links = document.querySelectorAll('link[rel="import"]');
+        links.forEach((link) => {
+            let template = link.import.querySelector('template');
+            let clone = document.importNode(template.content, true);
+            let target = clone.querySelector(".template").dataset.tab;
+            document.getElementById(target).appendChild(clone);
+        });
+
+        window.$ = window.jquery = require("jquery");
+        window.popper = require("popper.js");
+        require("bootstrap");
+        require('./renderer.js')
+    </script>
+</body>
+
+</html>
