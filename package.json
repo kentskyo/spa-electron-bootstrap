@@ -1,17 +1,17 @@
 {
     "name": "spa-electron-bootstrap",
     "version": "1.0.0",
-    "description": "SPA in Electron with Bootstrap Tabs",
+    "description": "A Simple SPA in Electron using Bootstrap Tabs",
     "main": "main.js",
     "scripts": {
         "start": "electron ."
     },
     "keywords": [
         "Electron",
-        "quick",
-        "start",
-        "tutorial",
-        "demo"
+        "SPA",
+        "bootstrap",
+        "tabs",
+        "kentskyo"
     ],
     "author": "kentskyo",
     "license": "CC0-1.0",

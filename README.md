@@ -1,8 +1,8 @@
 # spa-electron-bootstrap
 
-**Clone and run for a quick way model a SPA in Electon using template tags and bootstrap tabs.**
+**Clone and run for a quick way to experiment with SPA in Electron using Bootstrap Tabs**
 
-You can learn more about this approach in the post [Easy SPA with Electron](https://kentskyo.com).
+To read more about this setup [SPA with Electron and Bootstrap](https://kentskyo.com).
 
 ## To Use
 
@@ -10,7 +10,7 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/electron/spa-electron-bootstrap
+git clone https://github.com/kentskyo/spa-electron-bootstrap
 # Go into the repository
 cd spa-electron-bootstrap
 # Install dependencies
