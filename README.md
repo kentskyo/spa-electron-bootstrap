@@ -2,7 +2,7 @@
 
 **Clone and run for a quick way to experiment with SPA in Electron using Bootstrap Tabs**
 
-To read more about this setup [SPA with Electron and Bootstrap](https://kentskyo.com).
+To read more about this setup [check the blog post here](http://kentskyo.com/building-electron-applications-with-multiple-pages/).
 
 ## To Use
 
@@ -23,6 +23,7 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 
 ## Resources for Learning Electron
 
+- [Electron for Web Developers](https://www.learnelectron.com/) - excellent and quick start
 - [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
 - [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - sample starter apps created by the community
 - [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
