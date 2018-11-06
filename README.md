@@ -1,6 +1,6 @@
 # spa-electron-bootstrap
 
-**Clone and run for a quick way to experiment with SPA in Electron using Bootstrap Tabs**
+**Clone and run for a quick way to experiment serving Mutiple Pages in Electron using Bootstrap Tabs and HTML5 templates**
 
 To read more about this setup [check the blog post here](http://kentskyo.com/building-electron-applications-with-multiple-pages/).
 
